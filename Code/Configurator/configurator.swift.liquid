@@ -9,15 +9,14 @@
 import Foundation
 
 class {{ module_info.name }}Configurator {
-
-    func configure(_ view: {{ module_info.name }}View) {
-	let interactor = {{ module_info.name }}InteractorImpl()
+    func configure(_ view: {{ module_info.name }}ViewController) {
+        let interactor = {{ module_info.name }}InteractorImpl()
         let router = {{ module_info.name }}RouterImpl(view)
         let presenter = {{ module_info.name }}PresenterImpl(
-	    view, 
-	    interactor: interactor, 	
-	    router: router
-	)
+            view, 
+            interactor: interactor, 	
+            router: router
+        )
 
         interactor.presenter = presenter
         view.presenter = presenter 

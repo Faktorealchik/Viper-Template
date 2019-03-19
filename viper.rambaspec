@@ -8,17 +8,19 @@ license: "MIT"
 # The declarations for code files
 
 code_files:
-# View layer
-- {name: View/ViewController.swift, path: Code/View/viewcontroller.swift.liquid}
-
-# Presenter layer
-- {name: Presenter/Presenter.swift, path: Code/Presenter/presenter.swift.liquid}
-
-# Interactor layer
-- {name: Interactor/Interactor.swift, path: Code/Interactor/interactor.swift.liquid}
-
-# Router layer
-- {name: Router/Router.swift, path: Code/Router/router.swift.liquid}
 
 # Configurator
-- {name: Configurator/Configurator.swift, path: Code/Configurator/configurator.swift.liquid}
+- {name: Configurator.swift, path: Code/Configurator/configurator.swift.liquid}
+
+# Presenter layer
+- {name: Presenter.swift, path: Code/Presenter/presenter.swift.liquid}
+
+# Interactor layer
+- {name: Interactor.swift, path: Code/Interactor/interactor.swift.liquid}
+
+# View layer
+- {name: ViewController.swift, path: Code/View/viewcontroller.swift.liquid}
+
+# Router layer
+- {name: Router.swift, path: Code/Router/router.swift.liquid}
+
